@@ -25,7 +25,9 @@ jobs:
         pip install .
         pip install pytest
 
-    - name: Run tests
+    - name: Download NLTK resources
       run: |
-        pytest tests/
+        python -m nltk.downloader punkt_tab wordnet averaged_perceptron_tagger averaged_perceptron_tagger_eng
 
+    - name: Run tests
+      run: pytest tests/
