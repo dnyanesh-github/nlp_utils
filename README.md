@@ -1,3 +1,5 @@
+![Build Status](https://github.com/dnyanesh-github/nlp_utils/actions/workflows/python-app.yml/badge.svg)
+
 # Smart Lemmatizer
 
 A production-ready wrapper around NLTK's tokenizer, POS tagger, and WordNet lemmatizer. It simplifies the process of lemmatizing text by combining all necessary preprocessing steps into one reusable class.
