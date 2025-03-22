@@ -1,5 +1,5 @@
 import pytest
-from nlp_utils.smart_lemmatizer import SmartLemmatizer
+from dsnlp_utils.smart_lemmatizer import SmartLemmatizer
 
 @pytest.fixture
 def lemmatizer():
