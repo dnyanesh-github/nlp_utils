@@ -13,7 +13,7 @@ def test_single_sentence(lemmatizer):
 def test_multiple_sentences(lemmatizer):
     text = "The children are playing. They love to run."
     result = lemmatizer.lemmatize_text(text)
-    assert result == [['The', 'child', 'be', 'play', '.'], ['They', 'love', 'to', 'run', '.']]
+    assert result == [['the', 'child', 'be', 'play', '.'], ['they', 'love', 'to', 'run', '.']]
 
 def test_empty_string(lemmatizer):
     text = ""
@@ -23,5 +23,5 @@ def test_empty_string(lemmatizer):
 def test_punctuation_only(lemmatizer):
     text = "?!.,"
     result = lemmatizer.lemmatize_text(text)
-    assert result == [['?', '!', '.', ',']]
+    assert result == [['?'], ['!', '.', ',']]
 

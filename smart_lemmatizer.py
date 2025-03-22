@@ -47,7 +47,7 @@ class SmartLemmatizer:
         Returns:
             List[str]: List of lemmatized tokens.
         """
-        tokens = word_tokenize(sentence)
+        tokens = word_tokenize(sentence.lower())
         pos_tags = pos_tag(tokens)
         lemmatized = [self.lemmatizer.lemmatize(word, self.get_wordnet_pos(pos))
                       for word, pos in pos_tags]
