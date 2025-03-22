@@ -1,4 +1,4 @@
-![Build Status](https://github.com/dnyanesh-github/nlp_utils/actions/workflows/python-app.yml/badge.svg)
+![Build Status](https://github.com/dnyanesh-github/nlp_utils/actions/workflows/python-app.yml/badge.svg?branch=main)
 
 # 🚀 Smart Lemmatizer
 
